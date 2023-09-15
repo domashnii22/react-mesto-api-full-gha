@@ -1,0 +1,12 @@
+.popup__image-sign {
+  background-image: url(../../../images/Union.svg);
+  width: 120px;
+  height: 120px;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 32px;
+}

@@ -1,0 +1,11 @@
+.popup__save-button_valid {
+  background-color: #e5e5e5;
+  color: #000000;
+  border: 1px solid #000000;
+  opacity: 0.2;
+  cursor: default;
+}
+
+.popup__save-button_valid:hover {
+  opacity: 0.8;
+}

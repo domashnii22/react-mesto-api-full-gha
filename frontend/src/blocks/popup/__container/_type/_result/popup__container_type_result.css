@@ -1,0 +1,7 @@
+.popup__container_type_result {
+  padding: 60px 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 330px;
+}

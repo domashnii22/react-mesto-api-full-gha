@@ -1,0 +1,14 @@
+.header__unlogin {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+  color: #a9a9a9;
+  transition: opacity 0.3s;
+  text-decoration: none;
+}
+
+.header__unlogin:hover {
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}

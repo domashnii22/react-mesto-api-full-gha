@@ -1,0 +1,11 @@
+.login__button_invalid {
+  background-color: #1313133c;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  opacity: 0.2;
+  cursor: default;
+}
+
+.login__button_invalid :hover {
+  opacity: 0.85;
+}
