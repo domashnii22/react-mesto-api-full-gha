@@ -1,4 +1,4 @@
-const baseUrl = 'http://domashnii-al.nomoredomainsrocks.ru/api';
+const baseUrl = 'http://api.domashnii-al.nomoredomainsrocks.ru/';
 
 function getResponseData(res) {
   return res.ok
