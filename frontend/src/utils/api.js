@@ -14,6 +14,7 @@ class Api {
   getInfo(token) {
     return fetch(`${this._url}/users/me`, {
       headers: {
+        'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`,
       },
     }).then(this._checkResponse);
@@ -22,6 +23,7 @@ class Api {
   getCards(token) {
     return fetch(`${this._url}/cards`, {
       headers: {
+        'Content-Type': 'application/json',
         authorization: `Bearer ${token}`,
       },
     }).then(this._checkResponse);
@@ -97,8 +99,8 @@ class Api {
 }
 
 const api = new Api({
-  // baseUrl: 'http://localhost:3000',
-  baseUrl: 'http://api.domashnii-al.nomoredomainsrocks.ru',
+  baseUrl: 'http://localhost:3000',
+  // baseUrl: 'http://api.domashnii-al.nomoredomainsrocks.ru',
 });
 
 export default api;
