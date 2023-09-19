@@ -106,12 +106,17 @@ function App() {
 
   useEffect(() => {
     if (loggedIn) {
-      Promise.all([
-        api.getInfo(localStorage.jwt),
-        api.getCards(localStorage.jwt),
-      ])
-        .then(([dataUser, dataCard]) => {
+      api
+        .getInfo(localStorage.jwt)
+        .then((dataUser) => {
           setIsCurrentUser(dataUser);
+        })
+        .catch((error) =>
+          console.error(`Ошибка при создании начальных данных ${error}`)
+        );
+      api
+        .getCards(localStorage.jwt)
+        .then((dataCard) => {
           setCards(dataCard);
         })
         .catch((error) =>
