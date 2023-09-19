@@ -58,7 +58,7 @@ function App() {
   };
 
   useEffect(() => {
-    if (!localStorage.jwt) {
+    if (localStorage.jwt) {
       getUserData(localStorage.jwt)
         .then((res) => {
           setUserEmail(res.data.email);
