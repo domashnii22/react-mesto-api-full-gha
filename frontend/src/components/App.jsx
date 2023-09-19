@@ -209,7 +209,7 @@ function App() {
     authorization(password, email)
       .then((res) => {
         localStorage.setItem('jwt', res.token);
-        setUserEmail(email);
+        setUserEmail(res.data.email);
         setLoggedIn(true);
         window.scrollTo(0, 0);
         navigate('/');
