@@ -61,7 +61,7 @@ function App() {
     if (localStorage.jwt) {
       getUserData(localStorage.jwt)
         .then((res) => {
-          setUserEmail(res.email);
+          setUserEmail(res.data?.email);
           setLoggedIn(true);
           navigate('/');
         })
@@ -209,7 +209,7 @@ function App() {
     authorization(password, email)
       .then((res) => {
         localStorage.setItem('jwt', res.token);
-        setUserEmail(res.email);
+        setUserEmail(email);
         setLoggedIn(true);
         window.scrollTo(0, 0);
         navigate('/');
