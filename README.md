@@ -8,7 +8,7 @@
 
 ## Ссылки на проект
 
-IP-адрес 158.160.122.51
+IP 158.160.122.51
 
 Frontend https://domashnii-al.nomoredomainsrocks.ru
 
